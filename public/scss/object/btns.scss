@@ -1,0 +1,86 @@
+.o-smallBtn {
+    all: unset;
+    font-size: var(--text-sm);
+    color: var(--color-white);
+    cursor: pointer;
+    padding: var(--spacing-4);
+    border-radius: var(--spacing-4);
+    background-color: $prime;
+    font-weight: 900;
+    align-content: center;
+
+    &:hover {
+        color: var(--color-white);
+    }
+}
+
+.o-lightBtn {
+    all: unset;
+    font-size: var(--text-md);
+    color: var(--color-white);
+    cursor: pointer;
+    padding: var(--spacing-12);
+    border-radius: var(--spacing-12);
+    border: solid var(--spacing-2) var(--color-white);
+    background-color: $prime_light;
+    font-weight: 900;
+    box-shadow: var(--spacing-4) var(--spacing-4) var(--spacing-4) gray;
+
+    &:hover {
+        color: var(--color-white);
+    }
+}
+
+.o-whiteBtn {
+    all: unset;
+    cursor: pointer;
+    text-align: center;
+    padding: var(--spacing-8);
+    font-size: var(--text-lg);
+    border: var(--spacing-2) solid $prime;
+    border-radius: var(--spacing-32);
+    background-color: var(--color-white);
+    @media (max-width:768px) {
+        margin: 0;
+    }
+}
+
+.o-darkBtn {
+    all: unset;
+    cursor: pointer;
+    text-align: center;
+    padding: var(--spacing-8);
+    font-size: var(--text-lg);
+    border: var(--spacing-2) solid $light_gray;
+    border-radius: var(--spacing-32);
+    background-color: $bg_dark;
+    @media (max-width:768px) {
+        margin: 0;
+    }
+}
+
+.o-tag {
+    transition: 0.1s;
+
+    &:hover {
+        background-color: $dark_gray;
+        color: var(--color-white);
+    }
+
+    &:active {
+        background-color: $prime_gray;
+        color: var(--color-white);
+    }
+
+    @media (max-width: 768px) {
+        font-size: var(--text-xxs);
+        border-radius: var(--spacing-4);
+    }
+}
+
+
+.o-socialIcon {
+    font-size: var(--text-2xl);
+    width: var(--text-2xl);
+    aspect-ratio: 1/1;
+}
